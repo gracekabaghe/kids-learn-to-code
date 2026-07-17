@@ -27,7 +27,7 @@ Each "Session" is roughly 60–90 minutes. Concepts build on each other. We move
 
 ### Phase 1 — Foundations (understand, don't memorize)
 - [x] **Session 1:** Print, variables, input. Make the program say hello and ask the kid's name. *Concept: a program is a list of instructions that runs top to bottom.* ✅ DONE July 17, 2026 — code live on GitHub!
-- [ ] **Session 2:** Data types (text, numbers, True/False) + `if`/`else`. Ask a question, check the answer. *Concept: the program makes decisions.*
+- [x] **Session 2:** Data types (text, numbers, True/False) + `if`/`else`. Ask a question, check the answer. *Concept: the program makes decisions.* ✅ DONE July 17, 2026
 - [ ] **Session 3:** Lists + loops. Store many questions, ask them all. *Concept: doing something repeatedly without copy-paste.*
 - [ ] **Session 4:** Functions. Package logic into reusable named blocks. *Concept: naming an action so you can reuse it — the heart of not repeating yourself.*
 
@@ -55,6 +55,7 @@ Each "Session" is roughly 60–90 minutes. Concepts build on each other. We move
 *(We add a line here every session. This list is my confidence log.)*
 
 - **Session 1 (Jul 17):** `print()` shows text on screen. Strings = literal text in quotes. Variables = labeled boxes that store & remember values (`=` means "gets", not math-equals). `input()` asks a question and stores what the user types. `+` glues strings together. The computer is ruthlessly literal — a space only exists if you type it.
+- **Session 2 (Jul 17):** Booleans = `True`/`False` values. `==` (two equals) *checks* if two things are the same; `=` (one equals) *stores* a value — check vs. store. `if`/`else` makes the program choose a path based on a True/False test. The colon `:` starts a block. Indentation (4 spaces) tells Python which lines belong inside the `if`/`else` — it's required, not decoration. How to READ an error: read bottom-to-top — error type, plain-English reason, then line number + `^^^` pointer. Errors are helpful notes, not attacks.
 
 ---
 
