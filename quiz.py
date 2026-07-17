@@ -1,3 +1,6 @@
-print("Hi, I'm going to teach kids how to code")
-name = input("What is your name? ")
-print("Nice to meet you, " + name + "!")
+print("Quiz time! Let's test what you know.")
+answer = input("What color do you get when you mix blue and yellow? ")
+if answer == "green":
+    print("Correct! You're a natural.")
+else:
+    print("Not quite! Mixing blue and yellow makes green!")
