@@ -28,7 +28,7 @@ Each "Session" is roughly 60–90 minutes. Concepts build on each other. We move
 ### Phase 1 — Foundations (understand, don't memorize)
 - [x] **Session 1:** Print, variables, input. Make the program say hello and ask the kid's name. *Concept: a program is a list of instructions that runs top to bottom.* ✅ DONE July 17, 2026 — code live on GitHub!
 - [x] **Session 2:** Data types (text, numbers, True/False) + `if`/`else`. Ask a question, check the answer. *Concept: the program makes decisions.* ✅ DONE July 17, 2026
-- [ ] **Session 3:** Lists + loops. Store many questions, ask them all. *Concept: doing something repeatedly without copy-paste.*
+- [x] **Session 3:** Lists + loops. Store many questions, ask them all. *Concept: doing something repeatedly without copy-paste.* ✅ DONE July 17, 2026 — also debugged 3 real errors!
 - [ ] **Session 4:** Functions. Package logic into reusable named blocks. *Concept: naming an action so you can reuse it — the heart of not repeating yourself.*
 
 ### Phase 2 — A Real Quiz App
@@ -56,6 +56,7 @@ Each "Session" is roughly 60–90 minutes. Concepts build on each other. We move
 
 - **Session 1 (Jul 17):** `print()` shows text on screen. Strings = literal text in quotes. Variables = labeled boxes that store & remember values (`=` means "gets", not math-equals). `input()` asks a question and stores what the user types. `+` glues strings together. The computer is ruthlessly literal — a space only exists if you type it.
 - **Session 2 (Jul 17):** Booleans = `True`/`False` values. `==` (two equals) *checks* if two things are the same; `=` (one equals) *stores* a value — check vs. store. `if`/`else` makes the program choose a path based on a True/False test. The colon `:` starts a block. Indentation (4 spaces) tells Python which lines belong inside the `if`/`else` — it's required, not decoration. How to READ an error: read bottom-to-top — error type, plain-English reason, then line number + `^^^` pointer. Errors are helpful notes, not attacks.
+- **Session 3 (Jul 17):** Lists `[ ]` = one box holding many items, in order. Access an item by position with `list[i]` — counting starts at **0** (first item = `[0]`). `len(list)` = how many items. `for i in range(len(list)):` walks through every position. A `for` loop runs its indented block once per item — one line of code doing many lines of work. Two lists in matching order (questions + answers) pair up by position. DEBUGGING (did it for real): `SyntaxError` = missing `:`; `TypeError` = mixed incompatible types (e.g. list + string); `NameError` = misspelled/wrong variable name (Python even suggests the fix). Bugs hide on paths you don't test — always test the "wrong answer" path too. The loop: run → read error → fix ONE thing → run again.
 
 ---
 
