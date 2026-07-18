@@ -5,6 +5,36 @@ Every developer keeps a reference like this. Understanding > memorizing.
 
 ---
 
+## 🔧 Functions — named recipes you can reuse
+
+```python
+def greet(name):                   # define = write the recipe (just remember, don't run yet)
+    print("Hello, " + name + "!")
+                                   # blank line for readability
+greet("Grace")                     # call = cook the recipe now!
+greet("Sam")                       # same recipe, different ingredient → different result
+```
+
+- **`def`** = write the recipe (Python files it away — doesn't run it)
+- **`name()`** after def = cook the recipe (NOW it runs)
+- **Parameter** = the slot in `def name(param):` — the empty placeholder
+- **Argument** = the actual value in `name("Grace")` — what fills the slot
+- Arguments fill parameters **IN ORDER**: 1st → 1st, 2nd → 2nd
+- Code inside a function is **asleep** until called
+- Python reads top-to-bottom → **`def` must come BEFORE the call**
+
+**With multiple parameters (ingredients):**
+```python
+def ask_question(question, correct_answer):
+    reply = input(question + " ")
+    if reply == correct_answer:
+        print("Correct!")
+    else:
+        print("Not quite. The answer was " + correct_answer)
+
+ask_question("What's 2+2?", "4")     # question slot gets "What's 2+2?", correct_answer slot gets "4"
+```
+
 ## 📢 Printing (the program's voice)
 ```python
 print("Hello!")                 # show text on screen
