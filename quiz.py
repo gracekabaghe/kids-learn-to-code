@@ -24,7 +24,7 @@ print("Quiz time! Let's test what you know.")
 
 # for i in range(len(questions)):
 #     ask_question(questions[i], answers[i])
-
+score = 0
 quiz = {
     "What color do you get by mixing blue with yello?":
         "Green",
@@ -36,8 +36,12 @@ def ask_question(question, correct_answer):
     reply = input(question + " ")
     if reply == correct_answer:
         print("Correct")
+        return True
     else:
         print("Not quite! The correct answer was " + correct_answer)
+        return False
 
 for question, answer in quiz.items():
-    ask_question(question, answer)
+    if ask_question(question, answer):
+        score = score + 1
+print("You got ", score, "out of ", len(quiz))
