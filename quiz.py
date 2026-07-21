@@ -25,12 +25,14 @@ print("Quiz time! Let's test what you know.")
 # for i in range(len(questions)):
 #     ask_question(questions[i], answers[i])
 score = 0
-quiz = {
-    "What color do you get by mixing blue with yello?":
-        "Green",
-    "How many legs does a spider have?":
-        "8"
-    }
+quiz = {}
+file = open("questions.txt", "r")
+for line in file:
+    parts = line.split("|")
+    question = parts[0].strip()
+    answer = parts[1].strip()
+    quiz[question] = answer
+file.close()
 
 def ask_question(question, correct_answer):
     reply = input(question + " ")
