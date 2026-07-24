@@ -29,24 +29,19 @@ Each "Session" is roughly 60–90 minutes. Concepts build on each other. We move
 - [x] **Session 1:** Print, variables, input. Make the program say hello and ask the kid's name. *Concept: a program is a list of instructions that runs top to bottom.* ✅ DONE July 17, 2026 — code live on GitHub!
 - [x] **Session 2:** Data types (text, numbers, True/False) + `if`/`else`. Ask a question, check the answer. *Concept: the program makes decisions.* ✅ DONE July 17, 2026
 - [x] **Session 3:** Lists + loops. Store many questions, ask them all. *Concept: doing something repeatedly without copy-paste.* ✅ DONE July 17, 2026 — also debugged 3 real errors!
-- [ ] **Session 4:** Functions. Package logic into reusable named blocks. *Concept: naming an action so you can reuse it — the heart of not repeating yourself.*
+- [x] **Session 4:** Functions. ✅ DONE July 18
+- [x] **Session 5:** Dictionaries. ✅ DONE July 18
+- [x] **Session 6:** Keep score + return values. ✅ DONE July 18
+- [x] **Session 7:** Questions in a file. ✅ DONE July 19
+- [x] **Session 8:** Handle empty input (while loop). ✅ DONE July 19
+- [x] **Session 9:** Multiple files + imports. ✅ DONE July 19
+- [x] **Session 10:** Flashcard mode + menu (if/elif/else). ✅ DONE July 19
+- [x] **Session 11:** Terminal formatting. ✅ DONE July 19
+- [x] **Session 12:** Reflection + completion. ✅ DONE July 20 🎉
 
-### Phase 2 — A Real Quiz App
-- [ ] **Session 5:** Dictionaries — store a question WITH its answer, cleanly.
-- [ ] **Session 6:** Keep score, give feedback, loop through a full quiz.
-- [ ] **Session 7:** Save quiz questions in a separate file (read/write files). *Now non-coders could add questions.*
-- [ ] **Session 8:** Handle mistakes gracefully (what if the kid types nonsense?). *Concept: real programs expect bad input.*
-
-### Phase 3 — Level Up
-- [ ] **Session 9:** Organize code into multiple files (modules). Understand imports.
-- [ ] **Session 10:** Add flashcard mode + categories (HTML facts, Python facts, etc.).
-- [ ] **Session 11:** Make it pretty in the terminal (colors, formatting).
-- [ ] **Session 12:** Reflection + plan the "web version" path.
-
-### Phase 4 — Building With AI (the tinkering skill)
-- [ ] Learn to READ AI-generated code and know what each part does.
-- [ ] Learn to direct AI: ask for small changes, verify them, understand the diff.
-- [ ] Turn the quiz into a simple web app (tie back to my HTML/CSS/JS).
+### Phase 4 — Building With AI & Web (next chapter)
+- [x] **Learn to READ AI-generated code** — proved by understanding every file you built
+- [ ] **Turn the quiz into a web app** — next goal!
 
 ---
 
