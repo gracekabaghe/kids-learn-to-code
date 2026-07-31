@@ -1,4 +1,4 @@
-from flask import Flask, request, redirect
+from flask import Flask, request, redirect, render_template
 
 app = Flask(__name__)
 
@@ -23,13 +23,7 @@ STYLE = """
 @app.route("/")
 def home():
     total = len(questions)
-    return f"""
-        <html><head><style>{STYLE}</style></head><body>
-        <h1>🐍 Kids Quiz App</h1>
-        <p>{total} questions ready!</p>
-        <a href='/quiz?q=0&score=0' class="correct">Start Quiz</a>
-        </body></html>
-    """
+    return render_template("home.html", total = total)
 
 @app.route("/quiz", methods=["GET", "POST"])
 def quiz_page():
