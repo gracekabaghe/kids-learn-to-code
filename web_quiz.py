@@ -78,5 +78,12 @@ def quiz_page():
             <p style="margin-top:15px; color:#999;">Score: {score}</p>
             </body></html>
         """
+@app.route("/about")
+def about():
+    return f"""
+    <html><head><style>{STYLE}</style></head><body>
+    <h2>This quiz was built by Grace while learning Python. </h2>
+    <a href="/">Home</a>
+    """
 
 app.run(debug=True)
