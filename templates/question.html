@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Question {{ q + 1 }} - Kids Quiz{% endblock %}
+{% block content %}
+    <h1>Question {{ q + 1 }} of {{ total }}</h1>
+    <p style="font-size: 22px; color: #333;">{{ question }}</p>
+    <form method="post">
+        <input name="answer" autofocus placeholder="Type your answer...">
+        <button>Submit</button>
+    </form>
+    <p style="margin-top:15px; color:#999;">Score: {{ score }}</p>
+{% endblock %}

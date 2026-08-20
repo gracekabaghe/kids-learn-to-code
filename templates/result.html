@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Quiz Results{% endblock %}
+{% block content %}
+    {% if correct %}
+        <div style="background: #2ecc71; color: white; padding: 20px; border-radius: 10px; font-size: 24px;">
+            ✅ Correct!
+        </div>
+    {% else %}
+        <div style="background: #e74c3c; color: white; padding: 20px; border-radius: 10px; font-size: 24px;">
+            ❌ Not quite! The answer was: <b>{{ correct_answer }}</b>
+        </div>
+    {% endif %}
+
+    {% if done %}
+        <p style="margin-top:20px; font-size: 24px; color: #e74c3c;">Final score: {{ score }} out of {{ total }}</p>
+        <a href="/">Try Again</a>
+    {% else %}
+        <p style="margin-top:20px;">Score: {{ score }} / {{ answered }}</p>
+        <a href="/quiz?q={{ next_q }}&score={{ score }}">Next Question ➡️</a>
+    {% endif %}
+{% endblock %}

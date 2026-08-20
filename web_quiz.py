@@ -43,35 +43,20 @@ def quiz_page():
 
         if q + 1 < len(questions):
             next_link = f'<a href="/quiz?q={q + 1}&score={score}" class="correct">Next Question ➡️</a>'
-            return f"""
-                <html><head><style>{STYLE}</style></head><body>
-                {feedback}
-                <p style="margin-top:20px;">Score: {score} / {q + 1}</p>
-                {next_link}
-                </body></html>
-            """
-        else:
-            return f"""
-                <html><head><style>{STYLE}</style></head><body>
-                {feedback}
-                <p style="margin-top:20px;">Final Score:</p>
-                <p class="score">{score} out of {len(questions)}</p>
-                <a href="/" class="correct">Try Again</a>
-                </body></html>
-            """
+            done = q + 1 >= len(questions)
+            return render_template("result.html",
+            correct=is_right,
+            correct_answer=correct,
+            score=score,
+            total=len(questions),
+            answered=q + 1,
+            done=done,
+            next_q=q + 1)
 
     if q < len(questions):
-        return f"""
-            <html><head><style>{STYLE}</style></head><body>
-            <h1>Question {q + 1} of {len(questions)}</h1>
-            <p style="font-size: 22px; color: #333;">{questions[q]}</p>
-            <form method="post">
-                <input name="answer" autofocus placeholder="Type your answer...">
-                <button>Submit</button>
-            </form>
-            <p style="margin-top:15px; color:#999;">Score: {score}</p>
-            </body></html>
-        """
+        return render_template("question.html",
+        q=q, total=len(questions),
+        question=questions[q], score=score)
 @app.route("/about")
 def about():
     return f"""
